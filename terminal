@@ -1,0 +1,22 @@
+Mac终端使用shadowsocks 翻墙
+shadowsocks 客户端使用的是ShadowsocksX-NG版本
+
+右键点小飞机，然后有一个Copy HTTP Proxy Shell Export Line，
+点击之后会copy命令，可以把命令加在~/.zshrc里，用的时候终端 source ~/.zshrc，然后终端就可以翻了
+
+可以写成命令 随时开启 
+sudo vim ~/.zshrc
+
+
+proxy2 () {
+        export HTTP_PROXY=http://127.0.0.1:1087
+        export HTTPS_PROXY=http://127.0.0.1:1087
+        export ALL_PROXY=http://127.0.0.1:1087
+        echo "Proxy on"
+}
+unproxy2 () {
+        unset ALL_PROXY
+        unset HTTP_PROXY
+        unset HTTPS_PROXY
+        echo "Proxy off"
+}
