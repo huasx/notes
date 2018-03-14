@@ -59,3 +59,12 @@ func main(){
 Enter Function
 record Function
 Leave Function
+
+
+/**
+* 作为异常处理和文件关闭的处理函数。
+* 匿名函数和命名函数都可以作为defer的延迟函数。
+* 多个defer语句之间的顺序是先进后出的。
+* defer语句可以有返回值，但是这个返回值是没有意义的。
+* 匿名函数的操作对象如果会被返回，则该defer是会对返回值有影响的。
+*/
