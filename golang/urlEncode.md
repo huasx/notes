@@ -24,6 +24,20 @@ func main() {
 
 
 
+
+u, _ := url.Parse("")
+q := u.Query()
+q.Set("aaa", "aaaaa")
+q.Set("bbbb", bbbbb)
+q.Set("cccc", ccc)
+q.Set("ddd", "ddd")
+q.Set("time", strconv.FormatInt(time.Now().Unix(), 10))
+
+u.RawQuery = q.Encode()
+fmt.Printf(u.String())
+
+
+
 //使用 net/url包
 //实例化Values结构 是一个map[string][]string结构，所以实例化可以这样
 c := url.Values{"method": {"show", "aaaa"}, "id": {"1"}}
