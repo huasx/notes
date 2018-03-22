@@ -1,6 +1,7 @@
 ### PHP的数组结构很强大，golang里面如何组装PHP的多维数组
 
 php 代码
+![avatar](../static/image/php.jpg)
 
 ```
 $a = [
@@ -23,7 +24,7 @@ var_dump(http_build_query($a));
 
 
 Golang 代码
-
+![avatar](../static/image/golang.jpg)
 ```
 	aa := url.Values{}
 	aa.Add("a", "1111")
