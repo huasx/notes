@@ -1,0 +1,4 @@
+### php从 homebrew/php 迁移到了 homebrew/core
+
+### brew untap homebrew/php
+### untap之后 就可以search到了
