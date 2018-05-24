@@ -1,0 +1,5 @@
+排查路由节点  如果 ping  不行   就需要最后这一步来确认路由节点死在什么地方
+
+Mac ： traceroute api.pay.verystar.cn
+
+tracert api.pay.verystar.cn 
