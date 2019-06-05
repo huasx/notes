@@ -17,9 +17,6 @@ $_ENV['DEBUG'] = true;
 
 class SwooleMassSend
 {
-    private $client_code = 'zafdZxXeINCqGTB0Qj2oqAUtOdEOJO0M';//助手  测试号
-    private $client_sec = '8POSxEUsriGM02ErBruPw7rwaAGuTKXX';
-
     private $serv;
     private $host = '127.0.0.1';
     //注意一个任务一个端口号
